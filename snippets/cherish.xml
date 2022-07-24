@@ -9,6 +9,10 @@
   <remote  name="cherish"
            fetch="https://github.com/CherishOS/"
            revision="twelve-one" />
+		   
+  <remote  name="killcmd"
+           fetch="https://github.com/killcmd/"
+           revision="twelve-one" />
 
   <!-- GitLab -->
   <remote  name="gitlab"
@@ -23,6 +27,12 @@
            fetch="https://github.com/ArrowOS"
            review="https://review.arrowos.net/"
            revision="refs/heads/arrow-12.0" />
+
+<remote  name="arrow-12.1"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-12.1" />
+
 
   <!-- Rootdir -->
   <project path="art" name="android_art" remote="cherish" />
@@ -78,7 +88,8 @@
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
 
   <!-- Hardware -->
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="killcmd" />
+ <!-- <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish" />-->
   <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="cherish" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" revision="twelve" remote="cherish" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="twelve-caf" remote="cherish" />
